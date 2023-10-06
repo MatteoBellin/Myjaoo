@@ -25,7 +25,11 @@ public class Cat {
      */
     public Cat(String name, String color) {
         // TODO: initialize the object
+    	this.name = name;
+    	this.color = color;
+    	
         // TODO: increase the counter
+    	Cat.count++;
     }
 
     /**
@@ -40,6 +44,7 @@ public class Cat {
      */
     public void meow() {
         // TODO: Print name and color to System.out
+    	System.out.println(this.name + this.color);
     }
 
     /**
@@ -49,6 +54,7 @@ public class Cat {
      */
     public void meow(String word) {
         // TODO: Print word, cat name and color to System.out
+    	System.out.println(word + this.name + this.color);
     }
 
     @Override
