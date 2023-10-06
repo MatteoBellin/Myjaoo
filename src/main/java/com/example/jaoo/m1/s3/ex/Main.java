@@ -41,24 +41,23 @@ public class Main {
         }
 
         // TODO: (4) each cat named Kit should meow
-        for(int i = 0; i < cats.length; i++) {
-        	if(names[i].equals("Kit"))
-        		cats[i].meow();
+        for(Cat c : cats) {
+        	if(c.getName().equals("Kit"))
+        		c.meow();
         }
 
         // TODO: (5) only the first cat named Kit should meow
-        for(int i = 0; i < cats.length; i++) {
-        	if(names[i].equals("Kit")) {
-        		cats[i].meow();
+        for(Cat c : cats) {
+        	if(c.getName().equals("Kit")) {
+        		c.meow();
         		break;
         	}
+        		
         }
 
         // TODO: (6) only the cats in even position should meow
-        for(int i = 0; i < cats.length; i++) {
-        	if(i % 2 == 0) {
-        		cats[i].meow();
-        	}
+        for(int i = 0; i < cats.length; i += 2) {
+        	cats[i].meow();
         }
 
     }

@@ -44,7 +44,7 @@ public class Cat {
      */
     public void meow() {
         // TODO: Print name and color to System.out
-    	System.out.println(this.name + this.color);
+    	System.out.println(this.name + " " + this.color);
     }
 
     /**
@@ -54,7 +54,11 @@ public class Cat {
      */
     public void meow(String word) {
         // TODO: Print word, cat name and color to System.out
-    	System.out.println(word + this.name + this.color);
+    	System.out.println(word + " "  + this.name + " " + this.color);
+    }
+    
+    public String getName() {
+    	return this.name;
     }
 
     @Override
