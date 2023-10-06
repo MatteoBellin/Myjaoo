@@ -19,8 +19,35 @@ public class Exercise {
             System.out.println("Pass me one argument!");
         } else {
             // TODO (1) check if the argument contains only digits
+        	boolean foundNonDigit = false;
+        	for(int i = 0; i < args[0].length(); i++) {
+        		if(!Character.isDigit(args[0].charAt(i))) {
+        			foundNonDigit = true;
+        			break;
+        		}
+        	}
+        	
+        	if(foundNonDigit) {
+        		System.out.println("La stringa non contiene solo numeri");
+        	} else {
+        		System.out.println("La stringa contiene solo numeri");
+        	}
+        	
             // TODO (2) check if the argument contains at least one digit
-
+        	boolean foundDigit = false;
+        	for(int i = 0; i < args[0].length(); i++) {
+        		if(Character.isDigit(args[0].charAt(i))) {
+        			foundDigit = true;
+        			break;
+        		}
+        	}
+        	
+        	if(foundDigit) {
+        		System.out.println("La stringa contiene almeno un numero");
+        	} else {
+        		System.out.println("La stringa non contiene numeri");
+        	}
+        	
             System.out.println("Done");
         }
     }
