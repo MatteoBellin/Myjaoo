@@ -11,4 +11,6 @@ package com.example.jaoo.m3.s5.ex;
  * TODO: provide an abstract method to set the temperature to a given value
  */
 public interface Conditioning {
+	
+	public abstract void setTemperature(float temp);
 }
