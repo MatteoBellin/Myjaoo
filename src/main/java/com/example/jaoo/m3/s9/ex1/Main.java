@@ -41,17 +41,7 @@ public class Main {
             for(Actor actor2 : actors) {
             	if(actor != actor2) {
             		//Fight and decrease loser's hp
-            		result = actor.fight(actor2);
-            		if(result)
-            			actor2.decreaseHp(1);
-            		else
-            			actor.decreaseHp(1);
-            		
-            		//Check if one of the two fighters is dead
-            		if(actor2.getHp() == 0)
-            			System.out.println(actor.getName() + " wins!");
-            		if(actor.getHp() == 0)
-            			System.out.println(actor.getName() + " loses!");
+            		actor.fight(actor2);
             	}
             }
         }

@@ -54,7 +54,7 @@ public abstract class Actor {
 		return this.name;
 	}
 	
-	public void setHp(int hp) {
+	protected void setHp(int hp) {
 		this.hp = hp;
 	}
 	
@@ -62,13 +62,13 @@ public abstract class Actor {
 		return this.hp;
 	}
 	
-	public void decreaseHp(int dec) {
+	protected void decreaseHp(int dec) {
 		this.hp -= dec;
 		if(this.hp < 0)
 			this.hp = 0;
 	}
 	
-	public void increaseHp(int inc) {
+	protected void increaseHp(int inc) {
 		this.hp += inc;
 	}
 }
